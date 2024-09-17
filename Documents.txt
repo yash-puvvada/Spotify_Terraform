@@ -1,0 +1,12 @@
+-> spotify provider
+-> spotify API key
+-> Client ID , Client Secret (To interact with spotify's API) -> This can be found in the settings of the created APP
+-> Rollback URL ( http://localhost:27228/spotify_callback )
+-> Spotify Auth Proxy package (To connect spotify with Terraform to create the playlists)
+    -> run the docker command to get the apiKey, auth url (authenticate with the given auth url and take the apikey handy) - check the path of the env while running the docker command
+
+
+
+while executing terraform plan, if there is problem with apikey defined in the tfvars file then execute the with -var-file
+#terraform plan -var-file=terraform.tfvars
+
